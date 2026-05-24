@@ -6,10 +6,13 @@
 	import favicon from "$lib/assets/favicon.svg";
 	import { ScrollProgress } from "$lib/components/magic/scroll-progress";
 	import { SmoothCursor } from "$lib/components/magic/smooth-cursor";
+	import { Dock, DockIcon } from "$lib/components/magic/dock";
+
 	import Instagram from "@lucide/svelte/icons/instagram";
 	import Linkedin from "@lucide/svelte/icons/linkedin";
 	import Home from "@lucide/svelte/icons/home";
-	import { Dock, DockIcon } from "$lib/components/magic/dock";
+
+
 	let { children } = $props();
 </script>
 
@@ -20,7 +23,7 @@
 	<div class="absolute top-0 left-0 w-full min-h-full z-0 pointer-events-none overflow-hidden">
 		<Meteors number={70} class="opacity-30" />
 	</div>
-	<div id="navSection" class="fixed top-0 left-0 right-0 z-50 bg-[#050A18]/70 backdrop-blur-md border-b border-white/5">
+	<div id="navSection" class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md" style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
 		<Navbar />
 	</div>
 
@@ -28,17 +31,23 @@
 		{@render children()}
 	</main>
 
-	<div class="mt-auto flex flex-col items-center gap-2">
+	<div id="dockWrapper" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
 		<Dock direction="bottom" class="mt-0">
-			<DockIcon class="bg-black/10 dark:bg-white/10">
-				<Home class="size-full" />
-			</DockIcon>
-			<DockIcon class="bg-gradient-to-br from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#F77737]/20 text-[#E1306C]">
-				<Instagram class="size-full" />
-			</DockIcon>
-			<DockIcon class="bg-[#0077B5]/20 text-[#0077B5]">
-				<Linkedin class="size-full" />
-			</DockIcon>
+			<a href="/" aria-label="Home">
+				<DockIcon class="bg-black/10 dark:bg-white/10">
+					<Home class="size-full" />
+				</DockIcon>
+			</a>
+			<a href="https://www.instagram.com/agriazz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+				<DockIcon class="bg-gradient-to-br from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#F77737]/20 text-[#E1306C]">
+					<Instagram class="size-full" />
+				</DockIcon>
+			</a>
+			<a href="https://www.linkedin.com/in/agriazzukhruf" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+				<DockIcon class="bg-[#0077B5]/20 text-[#0077B5]">
+					<Linkedin class="size-full" />
+				</DockIcon>
+			</a>
 		</Dock>
 	</div>
 

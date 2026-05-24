@@ -6,7 +6,8 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-	--background: oklch(1 0 0);
+	/* Slightly darker than pure white to reduce glare in light mode */
+	--background: oklch(0.90 0 0);
 	--foreground: oklch(0.145 0 0);
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.145 0 0);
@@ -132,3 +133,21 @@
 	animation: none;
 	mix-blend-mode: normal;
 }
+
+/* Floating dock wrapper: center-bottom, follows viewport */
+#dockWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: auto;
+}
+
+@media (max-width: 640px) {
+	#dockWrapper {
+		bottom: 12px;
+		transform: translateX(-50%);
+		left: 50%;
+	}
+}
+
+/* Navbar text color is applied via a class on the nav element to preserve Tailwind hover utilities. */
