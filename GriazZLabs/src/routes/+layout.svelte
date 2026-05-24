@@ -1,30 +1,34 @@
 <script lang="ts">
 	import "./layout.css";
-	import navbar from "$lib/components/magic/navbar/navbar.svelte";
-	import footer from "$lib/components/magic/footer/footer.svelte";
+	import Navbar from "$lib/components/magic/navbar/navbar.svelte";
+	import Footer from "$lib/components/magic/footer/footer.svelte";
+	import Meteors from "$lib/components/magic/meteors/meteors.svelte";
 	import favicon from "$lib/assets/favicon.svg";
-	import { AnimatedThemeToggler } from "$lib/components/magic/animated-theme-toggler";
 	import { ScrollProgress } from "$lib/components/magic/scroll-progress";
 	import { SmoothCursor } from "$lib/components/magic/smooth-cursor";
 	import Instagram from "@lucide/svelte/icons/instagram";
 	import Linkedin from "@lucide/svelte/icons/linkedin";
 	import Home from "@lucide/svelte/icons/home";
-	import Meteors from '$lib/components/magic/meteors/Meteors.svelte';
 	import { Dock, DockIcon } from "$lib/components/magic/dock";
 	let { children } = $props();
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <SmoothCursor />
-<section class="min-h-screen pt-20 flex flex-col">
 
-	<div>
-		<navbar />
-		<main class="flex-1">{@render children()}</main>
-		<footer />
+<section class="min-h-screen flex flex-col">
+	<div class="absolute top-0 left-0 w-full min-h-full z-0 pointer-events-none overflow-hidden">
+		<Meteors number={70} class="opacity-30" />
+	</div>
+	<div id="navSection" class="fixed top-0 left-0 right-0 z-50 bg-[#050A18]/70 backdrop-blur-md border-b border-white/5">
+		<Navbar />
 	</div>
 
-	<div class="flex flex-col items-center gap-2">
+	<main class="flex-1 pt-24 md:pt-28">
+		{@render children()}
+	</main>
+
+	<div class="mt-auto flex flex-col items-center gap-2">
 		<Dock direction="bottom" class="mt-0">
 			<DockIcon class="bg-black/10 dark:bg-white/10">
 				<Home class="size-full" />
@@ -38,6 +42,8 @@
 		</Dock>
 	</div>
 
+	<Footer />
+
 	<ScrollProgress class="top-15.5" />
-	<AnimatedThemeToggler />
+	
 </section>
