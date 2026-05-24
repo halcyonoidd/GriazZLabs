@@ -4,13 +4,14 @@
 	import { AnimatedThemeToggler } from "$lib/components/magic/animated-theme-toggler";
 	import { ScrollProgress } from "$lib/components/magic/scroll-progress";
 	import { Pointer } from "$lib/components/magic/pointer";
-	import { motion } from "motion-sv";
 	let { children } = $props();
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-
-<section>
+<Pointer>
+	<div class="text-2xl">👆</div>
+</Pointer>
+<section class="min-h-screen pt-20 flex flex-col">
 	<div
 		id="navSection"
 		class="fixed top-0 left-0 right-0 z-50 bg-[#050A18]/70 backdrop-blur-md border-b border-white/5"
@@ -53,7 +54,7 @@
 	<main class="flex-1">{@render children()}</main>
 
 	<footer
-		class="mt-4 p-4 text-center"
-		style="border-top: 1px solid rgba(255, 255, 255, 0.05);"
+		class="p-4 text-center"
+		style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: calc(1rem + env(safe-area-inset-bottom));"
 	><p>© 2025 agriazz</p></footer>
 </section>

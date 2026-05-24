@@ -68,7 +68,7 @@
 <AnimatePresence>
 	{#if isActive}
 		<motion.div
-			class="pointer-events-none fixed z-50 transform-[translate(-50%,-50%)]"
+			class="pointer-events-none fixed z-[9999] transform-[translate(-50%,-50%)]"
 			style={{
 				top: y,
 				left: x,
