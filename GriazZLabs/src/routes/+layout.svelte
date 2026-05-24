@@ -11,6 +11,7 @@
 	import Instagram from "@lucide/svelte/icons/instagram";
 	import Linkedin from "@lucide/svelte/icons/linkedin";
 	import Home from "@lucide/svelte/icons/home";
+	import Github from "@lucide/svelte/icons/github";
 
 
 	let { children } = $props();
@@ -23,7 +24,7 @@
 	<div class="absolute top-0 left-0 w-full min-h-full z-0 pointer-events-none overflow-hidden">
 		<Meteors number={70} class="opacity-30" />
 	</div>
-	<div id="navSection" class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md" style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+	<div id="navSection" class="fixed top-0 left-0 right-0 z-50 bg-[#050A18] backdrop-blur-md border-b border-white/5">
 		<Navbar />
 	</div>
 
@@ -46,6 +47,11 @@
 			<a href="https://www.linkedin.com/in/agriazzukhruf" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
 				<DockIcon class="bg-[#0077B5]/20 text-[#0077B5]">
 					<Linkedin class="size-full" />
+				</DockIcon>
+			</a>
+			<a href="https://github.com/agriazz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+				<DockIcon class="bg-black/10 dark:bg-white/10">
+					<Github class="size-full" />
 				</DockIcon>
 			</a>
 		</Dock>
