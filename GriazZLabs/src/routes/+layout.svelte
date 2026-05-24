@@ -2,6 +2,9 @@
 	import "./layout.css";
 	import favicon from "$lib/assets/favicon.svg";
 	import { AnimatedThemeToggler } from "$lib/components/magic/animated-theme-toggler";
+	import { ScrollProgress } from "$lib/components/magic/scroll-progress";
+	import { Pointer } from "$lib/components/magic/pointer";
+	import { motion } from "motion-sv";
 	let { children } = $props();
 </script>
 
@@ -13,6 +16,7 @@
 		class="fixed top-0 left-0 right-0 z-50 bg-[#050A18]/70 backdrop-blur-md border-b border-white/5"
 	>
 		<nav class="px-6 py-4">
+		<ScrollProgress class="top-15.5" />
 			<div class="mx-auto flex max-w-7xl items-center">
 				<div class="flex w-full justify-between items-center">
 					<a
@@ -50,6 +54,6 @@
 
 	<footer
 		class="mt-4 p-4 text-center"
-		style="background-color: #050A18; border-top: 1px solid rgba(255, 255, 255, 0.05);"
+		style="border-top: 1px solid rgba(255, 255, 255, 0.05);"
 	><p>© 2025 agriazz</p></footer>
 </section>

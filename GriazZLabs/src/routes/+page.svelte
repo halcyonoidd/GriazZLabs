@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import { Pointer } from "$lib";
+</script>
+
+<section>
+    <h1 class="text-4xl font-bold mb-4">Welcome to GriazZLabs</h1>
+    <p class="text-lg text-gray-300">Explore our projects and get in touch!</p>
+</section>

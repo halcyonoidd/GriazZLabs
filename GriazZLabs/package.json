@@ -30,6 +30,9 @@
 		"vite": "^8.0.7"
 	},
 	"dependencies": {
-		"mode-watcher": "^1.1.0"
+		"lucide-svelte": "^1.0.1",
+		"mode-watcher": "^1.1.0",
+		"motion-sv": "^0.1.12",
+		"runed": "^0.37.1"
 	}
 }
