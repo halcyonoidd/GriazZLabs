@@ -1,7 +1,7 @@
 <script lang="ts">
-	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
-
+	import "./layout.css";
+	import favicon from "$lib/assets/favicon.svg";
+	import { AnimatedThemeToggler } from "$lib/components/magic/animated-theme-toggler";
 	let { children } = $props();
 </script>
 
@@ -24,12 +24,6 @@
 						class="flex flex-row flex-wrap gap-2 md:flex-row md:space-x-8 md:gap-0 items-center"
 						id="navMenu"
 					>
-						<li>
-							<a
-								href="/about"
-								class="inline-block text-sm font-medium text-gray-300 hover:text-red-500 transition-colors duration-300 py-1 px-2"
-							>About</a>
-						</li>
 
 						<li>
 							<a
@@ -44,6 +38,8 @@
 								class="inline-block text-sm font-medium text-gray-300 hover:text-red-500 transition-colors duration-300 py-1 px-2"
 							>Contact</a>
 						</li>
+
+						<AnimatedThemeToggler />
 					</ul>
 				</div>
 			</div>
