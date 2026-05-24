@@ -48,8 +48,8 @@
     style="top: {style.top}; left: {style.left}; --meteor-duration: {style.duration}; --meteor-delay: {style.delay};"
   >
     <div
-        class="meteor-tail pointer-events-none absolute top-1/2 -z-10 h-px w-32 -translate-y-1/2"
-        style="transform: rotate(-135deg); transform-origin: left center; background: linear-gradient(135deg, rgba(148,163,184,0.9), rgba(100,116,139,0.55), transparent);"
+      class="meteor-tail pointer-events-none absolute left-1/2 top-1/2 -z-10 h-px w-32"
+      style="transform: translate(-100%, -50%) rotate(45deg); transform-origin: right center; background: linear-gradient(135deg, transparent 0%, rgba(100,116,139,0.55) 55%, rgba(148,163,184,0.9) 100%);"
       ></div>
   </span>
 {/each}
