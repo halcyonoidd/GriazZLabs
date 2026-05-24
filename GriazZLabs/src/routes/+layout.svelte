@@ -3,14 +3,13 @@
 	import favicon from "$lib/assets/favicon.svg";
 	import { AnimatedThemeToggler } from "$lib/components/magic/animated-theme-toggler";
 	import { ScrollProgress } from "$lib/components/magic/scroll-progress";
-	import { Pointer } from "$lib/components/magic/pointer";
+	import { SmoothCursor } from "$lib/components/magic/smooth-cursor";
 	let { children } = $props();
+
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<Pointer>
-	<div class="text-2xl">👆</div>
-</Pointer>
+<SmoothCursor />
 <section class="min-h-screen pt-20 flex flex-col">
 	<div
 		id="navSection"

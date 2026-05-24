@@ -31,8 +31,10 @@
 	},
 	"dependencies": {
 		"lucide-svelte": "^1.0.1",
+		"mini-svg-data-uri": "^1.4.4",
 		"mode-watcher": "^1.1.0",
 		"motion-sv": "^0.1.12",
-		"runed": "^0.37.1"
+		"runed": "^0.37.1",
+		"svelte-motion": "^0.12.2"
 	}
 }
