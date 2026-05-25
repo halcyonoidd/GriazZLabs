@@ -51,7 +51,7 @@
 					<Linkedin class="size-full" />
 				</DockIcon>
 			</a>
-			<a href="https://github.com/agriazz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+			<a href="https://github.com/halcyonoidd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
 				<DockIcon class="bg-black/10 dark:bg-white/10">
 					<Github class="size-full" />
 				</DockIcon>
