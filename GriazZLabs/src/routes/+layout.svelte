@@ -4,6 +4,7 @@
 	import Footer from "$lib/components/magic/footer/footer.svelte";
 	import Meteors from "$lib/components/magic/meteors/Meteors.svelte";
 	import favicon from "$lib/assets/favicon.svg";
+
 	import { ScrollProgress } from "$lib/components/magic/scroll-progress";
 	import { SmoothCursor } from "$lib/components/magic/smooth-cursor";
 	import { Dock, DockIcon } from "$lib/components/magic/dock";
@@ -12,6 +13,7 @@
 	import Instagram from "$lib/components/icons/instagram.svelte";
 	import Linkedin from "$lib/components/icons/linkedin.svelte";
 	import Github from "$lib/components/icons/github.svelte";
+	import GriazZ from "$lib/components/icons/GriazZ.jpeg";
 	
 	let { children } = $props();
 </script>
@@ -54,6 +56,11 @@
 			<a href="https://github.com/halcyonoidd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
 				<DockIcon class="bg-black/10 dark:bg-white/10">
 					<Github class="size-full" />
+				</DockIcon>
+			</a>
+			<a href="https://griazz.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="GriazZ">
+				<DockIcon class="bg-black/10 dark:bg-white/10">
+					<img src={GriazZ} alt="GriazZ" class="size-full" />
 				</DockIcon>
 			</a>
 		</Dock>
