@@ -50,7 +50,7 @@
     Explore my projects, experiments, and thoughts on technology, programming, and design. Dive into a world of creativity and innovation!
   </p>
   <a href="/project" class="inline-block">
-    <InteractiveHoverButton class="rounded-lg bg-[#A97CF8] px-6 py-3 text-white transition-colors duration-300 hover:bg-[#A97CF8]/90">
+    <InteractiveHoverButton class="rounded-lg px-6 py-3">
       Explore Projects
     </InteractiveHoverButton>
   </a>

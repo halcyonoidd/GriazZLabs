@@ -19,7 +19,7 @@ export const reviews = [
 	},
     {
         name: "Universitas Negeri Surabaya",
-        username: "@unesa",
+        username: "@official_unesa",
         body: "Bachelor of Computer Science (2024 - Present)",
         img: unesa,
     },
@@ -35,4 +35,10 @@ export const reviews = [
 		body: "Staff External Relations (2026 - Present)",
 		img: bemft,
 	},
+	{
+		name: "Faculty of Mathematics and Natural Science - UNESA",
+		username: "@official_fmipaunesa",
+		body: "Data Structure Practicum Co-Assistant (2026 - Present)",
+		img: unesa,
+	}
 ];
