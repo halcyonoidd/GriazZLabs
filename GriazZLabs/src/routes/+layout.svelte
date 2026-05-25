@@ -23,7 +23,10 @@
 	<div class="absolute top-0 left-0 w-full min-h-full z-0 pointer-events-none overflow-hidden">
 		<Meteors number={70} class="opacity-30" />
 	</div>
-	<div id="navSection" class="fixed top-0 left-0 right-0 z-50 bg-[#050A18] backdrop-blur-md border-b border-white/5">
+	<div
+		id="navSection"
+		class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10"
+	>
 		<Navbar />
 	</div>
 
