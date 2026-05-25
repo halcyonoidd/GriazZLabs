@@ -1,9 +1,6 @@
 <script lang="ts">
   import { cn } from "$lib/utils";
   import { onMount } from "svelte";
-
-
-  export { className as class }; 
   
     let { class: className = undefined, number = 20 }: Props = $props();
 

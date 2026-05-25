@@ -2,18 +2,17 @@
 	import "./layout.css";
 	import Navbar from "$lib/components/magic/navbar/navbar.svelte";
 	import Footer from "$lib/components/magic/footer/footer.svelte";
-	import Meteors from "$lib/components/magic/meteors/meteors.svelte";
+	import Meteors from "$lib/components/magic/meteors/Meteors.svelte";
 	import favicon from "$lib/assets/favicon.svg";
 	import { ScrollProgress } from "$lib/components/magic/scroll-progress";
 	import { SmoothCursor } from "$lib/components/magic/smooth-cursor";
 	import { Dock, DockIcon } from "$lib/components/magic/dock";
 
-	import Instagram from "@lucide/svelte/icons/instagram";
-	import Linkedin from "@lucide/svelte/icons/linkedin";
-	import Home from "@lucide/svelte/icons/home";
-	import Github from "@lucide/svelte/icons/github";
-
-
+	import { Home } from "@lucide/svelte";
+	import Instagram from "$lib/components/icons/instagram.svelte";
+	import Linkedin from "$lib/components/icons/linkedin.svelte";
+	import Github from "$lib/components/icons/github.svelte";
+	
 	let { children } = $props();
 </script>
 
