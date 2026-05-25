@@ -22,7 +22,7 @@
 <SmoothCursor />
 
 <section class="min-h-screen flex flex-col">
-	<div class="absolute top-0 left-0 w-full min-h-full z-0 pointer-events-none overflow-hidden">
+	<div class="fixed inset-0 z-40 pointer-events-none overflow-hidden">
 		<Meteors number={70} class="opacity-30" />
 	</div>
 	<div
