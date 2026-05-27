@@ -1,0 +1,23 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="220" y1="120" x2="1380" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" />
+      <stop offset="0.5" stop-color="#1D4ED8" />
+      <stop offset="1" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="64" fill="url(#bg)" />
+  <circle cx="1220" cy="220" r="240" fill="#22D3EE" fill-opacity="0.14" />
+  <rect x="180" y="180" width="1240" height="640" rx="48" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.12" />
+  <rect x="240" y="248" width="280" height="40" rx="20" fill="white" fill-opacity="0.16" />
+  <rect x="240" y="320" width="360" height="220" rx="32" fill="#0F172A" fill-opacity="0.45" />
+  <rect x="630" y="320" width="420" height="220" rx="32" fill="#FFFFFF" fill-opacity="0.1" />
+  <rect x="1080" y="320" width="260" height="420" rx="32" fill="#FFFFFF" fill-opacity="0.08" />
+  <path d="M290 482L356 428L430 450L498 388L550 404" stroke="#22D3EE" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="660" y="378" width="300" height="22" rx="11" fill="white" fill-opacity="0.28" />
+  <rect x="660" y="430" width="220" height="22" rx="11" fill="white" fill-opacity="0.18" />
+  <rect x="660" y="482" width="340" height="22" rx="11" fill="#22D3EE" />
+  <rect x="1118" y="376" width="180" height="180" rx="90" fill="#22D3EE" fill-opacity="0.24" />
+  <text x="240" y="904" fill="white" fill-opacity="0.92" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700">FitTrack Dashboard</text>
+  <text x="240" y="952" fill="white" fill-opacity="0.68" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Progress snapshots, milestones, and habit tracking</text>
+</svg>

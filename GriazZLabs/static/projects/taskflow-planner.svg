@@ -1,0 +1,23 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="220" y1="140" x2="1380" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827" />
+      <stop offset="0.55" stop-color="#0F766E" />
+      <stop offset="1" stop-color="#14B8A6" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="64" fill="url(#bg)" />
+  <circle cx="1240" cy="220" r="250" fill="#FDE68A" fill-opacity="0.15" />
+  <rect x="180" y="170" width="1240" height="660" rx="48" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.12" />
+  <rect x="240" y="240" width="320" height="42" rx="21" fill="white" fill-opacity="0.16" />
+  <rect x="240" y="320" width="340" height="420" rx="32" fill="#0F172A" fill-opacity="0.48" />
+  <rect x="620" y="320" width="340" height="420" rx="32" fill="#FFFFFF" fill-opacity="0.12" />
+  <rect x="1000" y="320" width="360" height="420" rx="32" fill="#FFFFFF" fill-opacity="0.08" />
+  <rect x="276" y="372" width="256" height="24" rx="12" fill="#FDE68A" />
+  <rect x="276" y="430" width="196" height="18" rx="9" fill="white" fill-opacity="0.36" />
+  <rect x="276" y="468" width="224" height="18" rx="9" fill="white" fill-opacity="0.24" />
+  <rect x="276" y="520" width="142" height="52" rx="26" fill="#14B8A6" />
+  <path d="M688 620L742 560L790 600L854 500L902 534L954 454" stroke="#FDE68A" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="240" y="904" fill="white" fill-opacity="0.92" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700">TaskFlow Planner</text>
+  <text x="240" y="952" fill="white" fill-opacity="0.68" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Daily tasks, priorities, and team handoff</text>
+</svg>
