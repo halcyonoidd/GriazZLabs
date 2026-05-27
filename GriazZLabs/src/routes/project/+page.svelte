@@ -19,10 +19,11 @@
 <section id="project-list" class="mx-auto w-full max-w-7xl px-4 pb-20 md:px-6">
 	<div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
 		<div class="max-w-2xl text-left">
-			<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#A97CF8]">Selected work</p>
-			<h2 class="mt-2 text-2xl font-bold text-slate-950 dark:text-white md:text-3xl">Klik untuk membuka detail project</h2>
+			<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#A97CF8]">My Projects</p>
+			<h2 class="mt-2 text-2xl font-bold text-slate-950 dark:text-white md:text-3xl">Explore My Work</h2>
 			<p class="mt-2 text-sm leading-6 text-slate-600 dark:text-white/60 md:text-base">
-				Setiap kartu mengarah ke halaman detail project yang berisi define, problem, solution, role, dan DSB.
+				A showcase of my projects, highlighting the problems I solved, the technologies I used, and the impact they made.
+				Each project includes a detailed case study covering the problem statement, my role, the tech
 			</p>
 		</div>
 	</div>

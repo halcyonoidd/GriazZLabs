@@ -1,12 +1,20 @@
 <script lang="ts">
-	import { ArrowLeft, ArrowRight, Calendar, CheckCircle2, Layers3, Sparkles, UserRound } from "@lucide/svelte";
+	import { ArrowLeft, ArrowRight, Calendar, CheckCircle2, Layers3, Sparkles, User2, UserRound } from "@lucide/svelte";
 	import type { Project } from "$lib/data/projects";
+	import { AvatarCircles } from "$lib/components/magic/avatar-circles";
 
 	let { data } = $props<{ data: { project: Project; relatedProjects: Project[] } }>();
 	const project = $derived(data.project);
 	const relatedProjects = $derived(data.relatedProjects);
 	const story = $derived(project.story ?? project.summary);
+	const storyParagraphs = $derived(
+		story
+			.split(/\n+/)
+			.map((paragraph: string) => paragraph.trim())
+			.filter(Boolean),
+	);
 	const galleryImages = $derived(project.gallery?.length ? project.gallery : [project.image, project.image, project.image]);
+	const collaborators = $derived(project.collaborators ?? []);
 
 	import { writable } from 'svelte/store';
 	const selectedImage = writable<string | null>(null);
@@ -83,8 +91,15 @@
 					<div class="mt-3 flex flex-wrap gap-2">
 						{#each project.role as item}
 							<span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 dark:border-white/10 dark:bg-white/10 dark:text-white/80">{item}</span>
+		
 						{/each}
 					</div>
+					{#if collaborators.length}
+						<div class="mt-5 border-t border-slate-200 pt-5 dark:border-white/10">
+							<p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500 dark:text-white/50">Collaborators</p>
+							<AvatarCircles class="mt-4" avatarUrls={collaborators} maxVisible={3} />
+						</div>
+					{/if}
 				</div>
 
 				<div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-white/10 dark:bg-black/20 md:col-span-2">
@@ -92,24 +107,29 @@
 						<Sparkles class="size-4" />
 						Story
 					</div>
-					<p class="mt-3 text-sm leading-7 text-slate-700 dark:text-white/75">{story}</p>
+					<div class="mt-3 space-y-4 text-sm leading-7 text-slate-700 dark:text-white/75">
+						{#each storyParagraphs as paragraph}
+							<p>{paragraph}</p>
+						{/each}
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="space-y-6">
-			<div class="rounded-[2rem] border border-white/10 bg-slate-950 p-6 text-white shadow-2xl shadow-black/30">
+			<div class="rounded-[2rem] border border-white/10 bg-white/90 dark:border-white/10 dark:bg-white/5 p-6 text-white shadow-2xl shadow-black/30">
 				<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#A97CF8]">Features</p>
-				<p class="mt-3 text-base leading-7 text-white/75">
-					Bagian ini bisa dipakai untuk detail tambahan seperti deliverables, scope breakdown, atau hasil akhir project. Untuk project ini saya isi dengan poin yang paling relevan agar mudah dibaca.
+				<p class="mt-3 text-base leading-7 text-slate-700 dark:text-white/75">
+					Highlighting the key features of the project that demonstrate its value and impact.
+					Each feature is designed to address specific user needs and enhance the overall experience.
 				</p>
-				<div class="mt-5 space-y-3">
+				<div class="mt-5 space-y-3 ">
 					{#each project.features as item}
-						<div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+						<div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-white/10 dark:bg-black/20 px-4 py-3">
 							<span class="inline-flex size-8 items-center justify-center rounded-full bg-[#A97CF8]/15 text-[#A97CF8]">
 								<CheckCircle2 class="size-4" />
 							</span>
-							<p class="text-sm text-white/80">{item}</p>
+							<p class="text-sm text-slate-700 dark:text-white/75">{item}</p>
 						</div>
 					{/each}
 				</div>
