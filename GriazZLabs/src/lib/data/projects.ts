@@ -35,10 +35,7 @@ export const projects: Project[] = [
 		define: "ifLearning application is a digital innovation designed to provide an effective, interactive, and accessible learning experience for students and university students who want to learn about technology and programming.",
 		problem: "Students often struggle to find engaging and structured resources for learning technology and programming, leading to fragmented learning experiences.",
 		solution: "We designed an educational app that offers interactive lessons, practical exercises, and a supportive community to foster continuous learning and skill development.",
-		story: `The idea for ifLearning emerged from the need to create a more engaging and structured learning environment for students interested in technology. 
-				We wanted to move away from traditional, passive learning methods and instead provide an interactive platform that encourages active participation. 
-				The app was designed with a focus on real-world applications, allowing users to create projects based on everyday problems while also connecting with a community of learners for support and collaboration.`,
-
+		story: ``,
 		role: ["Researcher", "UI Designer"],
 		collaborators: [
 			{
