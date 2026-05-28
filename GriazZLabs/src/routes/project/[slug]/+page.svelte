@@ -179,8 +179,8 @@
 	<div class="mt-10">
 		<div class="mb-5 flex items-end justify-between gap-4">
 			<div>
-				<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#A97CF8]">Related</p>
-				<h2 class="mt-2 text-2xl font-bold text-slate-950 dark:text-white">Project lain yang bisa dilihat</h2>
+				<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#A97CF8]">Related Projects</p>
+				<h2 class="mt-2 text-2xl font-bold text-slate-950 dark:text-white">Check out these similar projects</h2>
 			</div>
 			<a href="/project" class="text-sm font-semibold text-slate-600 transition hover:text-slate-950 dark:text-white/65 dark:hover:text-white">See all</a>
 		</div>
