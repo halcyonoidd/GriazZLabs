@@ -42,11 +42,11 @@
 </script>
 
 <section class="flex min-h-[calc(100vh-10rem)] flex-col items-center justify-center px-4 text-center">
-  <h1 class="mb-4 flex flex-wrap items-center justify-center gap-x-3 text-4xl font-bold md:text-5xl">
+  <h1 class="mb-4 flex flex-wrap items-center justify-center gap-x-3 text-balance text-4xl font-bold leading-tight md:text-5xl">
     <span>Welcome to</span>
     <HyperText text="GriazZLabs" class="text-[#A97CF8]" />
   </h1>
-  <p class="mb-8 max-w-2xl text-lg ">
+  <p class="mb-8 max-w-2xl text-pretty text-base leading-7 text-slate-700 dark:text-white/70 md:text-lg">
     Explore my projects, experiments, and thoughts on technology, programming, and design. Dive into a world of creativity and innovation!
   </p>
   <a href="/project" class="inline-block">
@@ -60,7 +60,7 @@
 
 <section class="mx-auto w-full max-w-6xl px-4 py-16">
   <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-6 text-slate-900 shadow-2xl shadow-slate-900/10 backdrop-blur-md md:p-8 dark:border-white/10 dark:bg-white/5 dark:text-white dark:shadow-black/10">
-    <div class="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+    <div class="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
       <div class="max-w-2xl text-left">
         <p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#7F56D9] dark:text-[#A97CF8]/80">
           Quick Stats
@@ -70,11 +70,11 @@
           A brief summary of the projects I've built and the technologies I frequently use.
         </p>
       </div>
-      <div class="rounded-2xl border border-[#A97CF8]/20 bg-[#A97CF8] px-5 py-4 text-left shadow-lg shadow-[#A97CF8]/20 md:min-w-44 dark:border-[#A97CF8]/20 dark:bg-[#A97CF8]/15">
+      <div class="w-full rounded-2xl border border-[#A97CF8]/20 bg-[#A97CF8] px-5 py-4 text-left shadow-lg shadow-[#A97CF8]/20 md:min-w-44 md:w-auto dark:border-[#A97CF8]/20 dark:bg-[#A97CF8]/15">
         <p class="text-sm font-medium text-white/90 dark:text-white/75">Total projects</p>
           <NumberTicker
             value={5}
-            class="whitespace-pre-wrap text-6xl font-medium tracking-tighter text-white dark:text-white"
+            class="whitespace-pre-wrap text-5xl font-medium tracking-tighter text-white dark:text-white sm:text-6xl"
           />
       </div>
     </div>
@@ -89,19 +89,21 @@
             </span>
           {/each}
         </div>
-        <AvatarCircles numPeople={+10} avatarUrls={avatars} class="mt-4"/>
+        <AvatarCircles numPeople={+10} avatarUrls={avatars} class="mt-4 justify-center md:justify-start"/>
       </div>
 
       <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-slate-900 shadow-sm md:col-span-1 xl:col-span-2 dark:border-white/10 dark:bg-black/20 dark:text-white">
         <p class="text-sm font-medium uppercase tracking-[0.2em] text-slate-700 dark:text-white/55">Tech Stack</p>
-        <div class="mt-4 flex flex-wrap gap-2">
-          {#each tools as tool}
-            <span class="rounded-full border border-[#A97CF8]/25 bg-[#A97CF8]/12 px-3 py-1 text-sm text-slate-900 shadow-sm dark:border-[#A97CF8]/20 dark:bg-[#A97CF8]/10 dark:text-white/90">
-              {tool}
-            </span>
-          {/each}
+        <div class="mt-4 grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center">
+          <div class="flex flex-wrap gap-2">
+            {#each tools as tool}
+              <span class="rounded-full border border-[#A97CF8]/25 bg-[#A97CF8]/12 px-3 py-1 text-sm text-slate-900 shadow-sm dark:border-[#A97CF8]/20 dark:bg-[#A97CF8]/10 dark:text-white/90">
+                {tool}
+              </span>
+            {/each}
+          </div>
 
-          <div class="relative flex size-full items-center justify-center overflow-hidden">
+          <div class="relative mx-auto flex w-full max-w-[16rem] items-center justify-center overflow-hidden sm:max-w-[18rem] lg:max-w-none">
 	          <IconCloud {images} />
           </div>
         </div>
@@ -110,7 +112,7 @@
   </div>
 </section>
 
-<div class="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-transparent py-20 md:shadow-xl">
+<div class="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/70 py-16 shadow-none backdrop-blur md:py-20 md:shadow-xl dark:border-white/10 dark:bg-white/5">
   <Marquee pauseOnHover class="[--duration:20s]">
     {#each firstRow as item}
       <Reviewcard {...item} />

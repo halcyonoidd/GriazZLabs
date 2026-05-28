@@ -36,8 +36,8 @@
 		{@render children()}
 	</main>
 
-	<div id="dockWrapper" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
-		<Dock direction="bottom" class="mt-0">
+	<div id="dockWrapper" class="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] left-3 right-3 z-50 sm:left-1/2 sm:right-auto sm:bottom-6 sm:-translate-x-1/2">
+		<Dock direction="bottom" iconSize={30} iconMagnification={38} iconDistance={84} class="mt-0 w-full max-w-[22rem] justify-between gap-1 overflow-visible px-2 py-2 sm:w-max sm:justify-center sm:gap-2 sm:px-2 sm:py-2">
 			<a href="/" aria-label="Home">
 				<DockIcon class="bg-black/10 dark:bg-white/10">
 					<Home class="size-full" />
