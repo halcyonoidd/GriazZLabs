@@ -1,8 +1,8 @@
-import wd from "$lib/data/img/wd.png";
-import daqu from "$lib/data/img/daqu.jpg";
-import aiesec from "$lib/data/img/aiesec.png";
-import bemft from "$lib/data/img/bemft.jpg";
-import unesa from "$lib/data/img/unesa.jpg";
+const daqu = new URL("../../assets/images/daarul_quran.png", import.meta.url).href;
+const wd = new URL("../../assets/images/sman6tangerang.png", import.meta.url).href;
+const unesa = new URL("../../assets/images/unesa.png", import.meta.url).href;
+const aiesec = new URL("../../assets/images/aiesec.png", import.meta.url).href;
+const bemft = new URL("../../assets/images/bemft.png", import.meta.url).href;
 
 export const reviews = [
 	{

@@ -15,7 +15,11 @@
   >
     <figcaption class="sr-only">{name}</figcaption>
     <div class="flex flex-row items-center gap-2">
-      <img class="rounded-full" width="32" height="32" alt="" src={img} />
+        {#if typeof img === 'string'}
+          <img class="rounded-full" width="32" height="32" alt="" src={encodeURI(img)} />
+        {:else}
+          <img class="rounded-full" width="32" height="32" alt="" src={img} />
+        {/if}
       <div class="flex flex-col">
         <p class="text-sm font-medium dark:text-white">{name}</p>
         <p class="text-xs font-medium dark:text-white/40">{username}</p>
