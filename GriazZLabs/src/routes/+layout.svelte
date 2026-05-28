@@ -3,7 +3,7 @@
 	import Navbar from "$lib/components/magic/navbar/navbar.svelte";
 	import Footer from "$lib/components/magic/footer/footer.svelte";
 	import Meteors from "$lib/components/magic/meteors/Meteors.svelte";
-	import favicon from "$lib/assets/favicon.svg";
+	import GLabs from "$lib/assets/GLabs.svg";
 
 	import { ScrollProgress } from "$lib/components/magic/scroll-progress";
 	import { SmoothCursor } from "$lib/components/magic/smooth-cursor";
@@ -18,7 +18,7 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head><link rel="icon" href={GLabs} /></svelte:head>
 <SmoothCursor />
 
 <section class="min-h-screen flex flex-col">
