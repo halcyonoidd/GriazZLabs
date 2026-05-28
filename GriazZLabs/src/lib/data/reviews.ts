@@ -1,8 +1,8 @@
-const daqu = new URL("../../assets/images/daarul_quran.png", import.meta.url).href;
-const wd = new URL("../../assets/images/sman6tangerang.png", import.meta.url).href;
-const unesa = new URL("../../assets/images/unesa.png", import.meta.url).href;
-const aiesec = new URL("../../assets/images/aiesec.png", import.meta.url).href;
-const bemft = new URL("../../assets/images/bemft.png", import.meta.url).href;
+const daqu = "/projects/daqu.jpg";
+const wd = "/projects/wd.png";
+const unesa = "/projects/unesa.jpg";
+const aiesec = "/projects/aiesec.png";
+const bemft = "/projects/bemft.jpg";
 
 export const reviews = [
 	{
