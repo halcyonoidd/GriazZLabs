@@ -42,7 +42,7 @@ export const projects: Project[] = [
 				Driven by this issue, we set a clear objective: we wanted to build a digital innovation that could transform how students learn technology. The main goal of ifLearning is to provide a learning experience that is not only effective and accessible but also highly interactive, ensuring that learning to code no longer feels rigid or boring.
 
 				The Solution
-				To answer this challenge, we designed ifLearningâ€”a comprehensive educational app. We focused on three core values to solve the users' pain points:
+				To answer this challenge, we designed ifLearning a comprehensive educational app. We focused on three core values to solve the users' pain points:
 				(1) Structured and Interactive Learning: Providing a clear learning path alongside interactive, practical exercises.
 				(2) Real Projects Based on Everyday Problems: Encouraging users not just to memorize theories, but to directly build real-world projects relevant to daily life.
 				(3) Supportive Community: Creating a safe space for learners to discuss, share knowledge, and foster continuous skill development.
@@ -87,7 +87,7 @@ export const projects: Project[] = [
 		image: "/projects/citta.jpg",
 		summary: "AI-based journaling app that helps people share theirday-to-day experiences.",
 		define: "Citta is a digital innovation, an AI-based journaling app that helps people share their day-to-day experiences. Through intuitive and intelligent interactions, the helps individuals unravel the complexities of their thoughts in a safe digital space, transforming the habit of self-reflection into a personal, warm, and meaningful interactive dialogue.",
-		problem: "Many individuals today struggle with high levels of mental exhaustion (burnout) but hesitate to seek help or share their struggles due to the fear of stigma and judgment. Furthermore, conventional journalingâ€”often used as a safe emotional outletâ€”has significant limitations, failing to provide a truly dynamic and effective space for them to process their feelings.",
+		problem: "Many individuals today struggle with high levels of mental exhaustion (burnout) but hesitate to seek help or share their struggles due to the fear of stigma and judgment. Furthermore, conventional journaling often used as a safe emotional outlet, failing to provide a truly dynamic and effective space for them to process their feelings.",
 		solution: "We designed an app, where people or individuals can freely express their daily stories without being judged by others and get solutions directly.",
 		story: `The Problem
 				Many individuals today struggle with high levels of mental exhaustion (burnout) but hesitate to seek help or share their struggles due to the fear of stigma and judgment. While conventional journaling is often used as a safe emotional outlet, it has significant limitations. It remains a one-sided activity, failing to provide a truly dynamic and effective space for people to actively process their feelings and find immediate relief.
@@ -96,7 +96,7 @@ export const projects: Project[] = [
 				The primary objective of this project was to transform the solitary, often passive habit of self-reflection into a personal, warm, and meaningful interactive dialogue. We wanted to build a digital safe space where individuals could untangle the complexities of their thoughts without the fear of being judged, bridging the gap between traditional journaling and active emotional support.
 
 				The Solution
-				To address these emotional barriers, we developed Cittaâ€”an AI-based journaling app designed to listen and respond. Citta allows individuals to freely express their daily stories and receive empathetic solutions directly. To make the experience truly personal, we integrated key features such as a Multi-Dimensional Emotion Analysis and an Adaptive UI Colorway, where the interface dynamically shifts to match and comfort the user's current mood. The app also includes AI Decision Support to provide mild, helpful interventions when users need guidance the most.
+				To address these emotional barriers, we developed Citta an AI-based journaling app designed to listen and respond. Citta allows individuals to freely express their daily stories and receive empathetic solutions directly. To make the experience truly personal, we integrated key features such as a Multi-Dimensional Emotion Analysis and an Adaptive UI Colorway, where the interface dynamically shifts to match and comfort the user's current mood. The app also includes AI Decision Support to provide mild, helpful interventions when users need guidance the most.
 
 				Roles & Process
 				Developed in 2026, I took on the core responsibilities of Researcher and UI Designer. My research focused on directly engaging with potential users through surveys and interviews to map out an "Empathic UX Approach" based on their real psychological barriers. On the design side, I used Figma to translate these deep insights into an intuitive, comforting, and dynamic interface, ultimately delivering a comprehensive proposal and a fully functional interactive prototype.
@@ -139,7 +139,7 @@ export const projects: Project[] = [
 		image: "/projects/Daichino_landing.png",
 		summary: "Daichi No is a website for a Japanese-themed restaurant that offers an authentic dining experience using fresh and natural ingredients.",
 		define: "Daichi No is a premium digital platform designed for an exclusive Japanese-themed restaurant in Indonesia. It translates the restaurant's high-end, nature-inspired dining concept into a seamless online experience, featuring earthy tones, interactive navigation, and a structured presentation of its traditional and modern culinary offerings.",
-		problem: "Premium dining establishments often struggle to translate their exclusive, immersive physical ambiance into a digital format. Customers seeking high-end culinary experiences need an intuitive platform to fully understand the restaurant's unique conceptsâ€”such as category-specific dining areas and tier-based experiencesâ€”without losing the sense of luxury and exclusivity.",
+		problem: "Premium dining establishments often struggle to translate their exclusive, immersive physical ambiance into a digital format. Customers seeking high-end culinary experiences need an intuitive platform to fully understand the restaurant's unique concepts—such as category-specific dining areas and tier-based experiences—without losing the sense of luxury and exclusivity.",
 		solution: "We developed a sophisticated, interactive website that mirrors the restaurant's premium quality. The platform features an elegant UI, dynamic menus grouped by distinct categories (e.g., Mizu for seafood), an immersive chef introduction, and a streamlined reservation system that allows users to seamlessly book exclusive, tier-based dining experiences.",
 		story: `The Problem
 				The concept of Daichi No revolves around premium, nature-inspired Japanese dining. However, traditional restaurant websites often feel flat and purely transactional. They frequently fail to capture the immersive, high-end ambiance of a physical restaurant, making it difficult for customers to truly appreciate unique offerings such as category-specific dining areas and exclusive, tiered dining experiences before they even step foot through the doors.
@@ -154,7 +154,7 @@ export const projects: Project[] = [
 				In this project, I took on the role of Backend Developer, collaborating closely with my partner, Agus Prasetya(Diamond-Glitch). While my collaborator focused on bringing the earthy, Japanese-themed aesthetics to life on the frontend, I was responsible for the core logic and server-side architecture. Using PHP and the Laravel framework, I designed the PostgreSQL database structure to manage user authentication, complex menu inventories, and the backend logic powering the seamless user and admin experiences.
 
 				Challenges & Obstacles
-				As the Backend Developer, the most significant challenge was architecting a robust and secure data flow for the dynamic cart and tier-based reservation systems. Ensuring that user bookings, cart sessions, and checkouts synced perfectlyâ€”without data conflictsâ€”required meticulous routing, session management, and relational database design in Laravel. Furthermore, building a comprehensive Admin Dashboard to track users and manage live reservations meant writing secure, efficient data queries that could keep the restaurant's operations running smoothly behind the scenes.`,
+				As the Backend Developer, the most significant challenge was architecting a robust and secure data flow for the dynamic cart and tier-based reservation systems. Ensuring that user bookings, cart sessions, and checkouts synced perfectly—without data conflicts—required meticulous routing, session management, and relational database design in Laravel. Furthermore, building a comprehensive Admin Dashboard to track users and manage live reservations meant writing secure, efficient data queries that could keep the restaurant's operations running smoothly behind the scenes.`,
 		role: ["Backend Developer"],
 		features: ["Dynamic & Consistent Navigation", 
 					"Interactive Categorized Menu", 
@@ -204,7 +204,21 @@ export const projects: Project[] = [
 		define: "GriazZ is a personal portfolio website designed to showcase my projects, skills, and experiences in a visually engaging way. The website features a clean, modern design with intuitive navigation, allowing visitors to easily explore my work and learn more about my background and expertise.",
 		problem: "As a creative professional, I needed a platform to effectively showcase my projects and skills. However, traditional portfolio websites often fail to capture the essence of my work and present it in an engaging way. I wanted a website that would display my projects, highlight my skills, and provide an immersive experience for visitors, while also being easy to navigate and visually appealing.",
 		solution: "To address this, I designed and developed GriazZ, a personal portfolio website that combines a clean, modern aesthetic with interactive elements. The website features intuitive navigation, allowing visitors to easily explore my projects and learn more about my background and expertise. I focused on creating a visually engaging experience that effectively communicates the essence of my work while also highlighting my skills and experiences in a compelling way.",
-		story: ``,
+		story: `
+				The Problem
+				Building a personal brand in the tech industry requires more than just a standard PDF resume or a generic website template. I needed a dedicated digital space that didn't just list my projects, but actively demonstrated my design sensibilities and technical proficiency. Many traditional portfolio templates felt too rigid, cluttered, or failed to capture the immersive, modern aesthetic I was aiming for. I needed a platform that could properly communicate the essence of my work while keeping visitors engaged.
+
+				The Goal
+				The objective was to craft a primary digital storefront—a visually striking, highly responsive portfolio that would serve as the first point of contact for peers, recruiters, and collaborators. It needed to be clean, intuitive to navigate, and capable of leaving a strong, professional first impression without overwhelming the user with unnecessary details.
+
+				The Solution
+				I designed and developed GriazZ, a modern personal portfolio that perfectly balances a clean aesthetic with interactive elements. The website features a streamlined, intuitive navigation system that allows visitors to seamlessly explore my highlighted skills, professional background, and featured projects. Every element was carefully placed to ensure an engaging, immersive experience that looks and feels premium across all devices.
+
+				Roles & Process
+				Operating as the Fullstack Developer for this project in 2025, I built the entire platform from the ground up using Svelte and Tailwind CSS. Svelte allowed me to create highly reactive, lightweight web components, while Tailwind CSS provided the granular styling control needed to execute a highly custom, modern UI without the bloat of traditional CSS files.
+
+				Challenges & Obstacles
+				The primary challenge in building GriazZ was achieving the perfect harmony between high-end visual aesthetics and optimal website performance. Implementing a visually engaging layout with high-quality project galleries can often lead to sluggish load times. While Svelte's compile-time architecture naturally boosted performance, meticulously optimizing the image assets and structuring the Tailwind utility classes for a fully responsive layout required a lot of trial, error, and fine-tuning to ensure a lightning-fast user experience.`,
 		role: ["Fullstack Developer"],
 		features: ["Clean, Modern Design", "Intuitive Navigation", "Project Showcases with Detailed Descriptions", "Skills Highlight Section", "Responsive Layout for All Devices"],
 		gallery: [
@@ -237,7 +251,7 @@ export const projects: Project[] = [
 				A traditional portfolio is great for making a strong first impression, but it often only scratches the surface. While my main portfolio, GriazZ, effectively showcased the final polish of my projects, I realized it lacked the narrative depth that recruiters, peers, and collaborators often look for. Visitors could see what I built, but they couldn't see the how or the why. They were missing out on the problem-solving processes, the technical hurdles, and the creative decisions that shaped the final outcomes, leaving them with a somewhat superficial understanding of my work.
 
 				The Goal
-				I wanted to build a bridge between the final product and the raw development process. The objective was to create a dedicated space where I could document the "behind-the-scenes" of every projectâ€”detailing the challenges faced and the logic behind specific technical and design decisionsâ€”without cluttering the main, visually-driven showcase of GriazZ.
+				I wanted to build a bridge between the final product and the raw development process. The objective was to create a dedicated space where I could document the "behind-the-scenes" of every project—detailing the challenges faced and the logic behind specific technical and design decisions—without cluttering the main, visually-driven showcase of GriazZ.
 
 				The Solution
 				To solve this, I developed GriazZLabs, a companion platform designed specifically for storytelling and deep-dive case studies. GriazZLabs acts as the analytical brain to GriazZ's visual storefront. It features comprehensive project descriptions, direct insights into challenges and solutions, and interactive elements that allow visitors to explore the development timeline. By separating the case studies from the main portfolio, I created a more engaging and informative experience for those who want to understand my technical thought process.
@@ -246,7 +260,7 @@ export const projects: Project[] = [
 				Operating as the sole Fullstack Developer for this project in 2026, I was responsible for the entire pipeline. On the frontend, I designed a simple, clean, highly readable interface tailored for long-form content consumption. On the backend, I structured the data models and routing to efficiently deliver rich text, dynamic project galleries, and feature lists, ensuring the platform remained fast and responsive regardless of how much detail a project contained.
 
 				Challenges & Obstacles
-				The most difficult part was determining exactly what information needed to be displayed. I had to strike a careful balance between providing enough technical depth to clearly explain my thought process, and keeping the content concise enough to hold the reader's attention. Deciding which parts of the "behind-the-scenes" journey were genuinely valuable to visitorsâ€”and filtering out unnecessary details so the interface wouldn't feel overwhelmingâ€”required rigorous critical thinking and continuous refinement of the information layout.`,
+				The most difficult part was determining exactly what information needed to be displayed. I had to strike a careful balance between providing enough technical depth to clearly explain my thought process, and keeping the content concise enough to hold the reader's attention. Deciding which parts of the "behind-the-scenes" journey were genuinely valuable to visitors—and filtering out unnecessary details so the interface wouldn't feel overwhelming—required rigorous critical thinking and continuous refinement of the information layout.`,
 		role: ["Fullstack Developer"],
 		features: ["Detailed Project Descriptions", "Insights into Challenges and Solutions", "Comprehensive View of the Creative Journey", "Interactive Elements to Explore the Process"],
 		gallery: [
