@@ -10,9 +10,9 @@
 	import { Dock, DockIcon } from "$lib/components/magic/dock";
 
 	import { Home } from "@lucide/svelte";
-	import Instagram from "$lib/components/icons/instagram.svelte";
-	import Linkedin from "$lib/components/icons/linkedin.svelte";
-	import Github from "$lib/components/icons/github.svelte";
+	import Instagram from "$lib/components/home/icons/instagram.svelte";
+	import Linkedin from "$lib/components/home/icons/linkedin.svelte";
+	import Github from "$lib/components/home/icons/github.svelte";
 	import GriazZ from "$lib/components/icons/GriazZ.jpeg";
 	
 	let { children } = $props();
