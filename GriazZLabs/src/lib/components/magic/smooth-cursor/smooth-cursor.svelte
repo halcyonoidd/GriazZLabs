@@ -154,7 +154,6 @@
 	initial={{ scale: 0 }}
 	animate={{ scale: 1 }}
 	transition={{
-{/if}
 		type: "spring",
 		stiffness: 400,
 		damping: 30,
@@ -222,3 +221,4 @@
 		</svg>
 	{/if}
 </motion.div>
+{/if}
