@@ -5,13 +5,13 @@
   let { firstRow = [], secondRow = [] } = $props();
 </script>
 
-<div class="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/70 py-16 shadow-none backdrop-blur md:py-20 md:shadow-xl dark:border-white/10 dark:bg-white/5">
-  <Marquee pauseOnHover class="[--duration:20s]">
+<div class="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-[2rem] py-16 shadow-none backdrop-blur md:py-20 md:shadow-xl">
+  <Marquee pauseOnHover class="[--duration:25s]">
     {#each firstRow as item}
       <Reviewcard {...item} />
     {/each}
   </Marquee>
-  <Marquee reverse pauseOnHover class="[--duration:20s]">
+  <Marquee reverse pauseOnHover class="[--duration:15s]">
     {#each secondRow as item}
       <Reviewcard {...item} />
     {/each}
