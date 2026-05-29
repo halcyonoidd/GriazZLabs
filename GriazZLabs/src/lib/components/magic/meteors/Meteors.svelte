@@ -45,7 +45,7 @@
     style="top: {style.top}; left: {style.left}; --meteor-duration: {style.duration}; --meteor-delay: {style.delay};"
   >
     <div
-      class="meteor-tail pointer-events-none absolute left-1/2 top-1/2 -z-10 h-px w-32"
+      class="meteor-tail pointer-events-none absolute left-1/2 top-1/2 -z-10 h-px w-10"
       style="transform: translate(-100%, -50%) rotate(45deg); transform-origin: right center; background: linear-gradient(135deg, transparent 0%, rgba(100,116,139,0.55) 55%, rgba(148,163,184,0.9) 100%);"
       ></div>
   </span>
