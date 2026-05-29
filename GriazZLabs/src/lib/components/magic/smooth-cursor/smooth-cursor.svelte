@@ -29,6 +29,7 @@
 	}: SmoothCursorProps = $props();
 
 	let isMoving = $state(false);
+	let isEnabled = $state(false);
 	let lastMousePos = $state<Position>({ x: 0, y: 0 });
 	let velocity = $state<Position>({ x: 0, y: 0 });
 	let lastUpdateTime = $state(Date.now());
@@ -53,6 +54,10 @@
 	);
 
 	onMount(() => {
+		const desktopCursorQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+		let rafId = 0;
+		let timeoutId: ReturnType<typeof setTimeout> | undefined;
+
 		const updateVelocity = (currentPos: Position) => {
 			const currentTime = Date.now();
 			const deltaTime = currentTime - lastUpdateTime;
@@ -90,16 +95,13 @@
 				scale.set(0.95);
 				isMoving = true;
 
-				const timeout = setTimeout(() => {
+				timeoutId = setTimeout(() => {
 					scale.set(1);
 					isMoving = false;
 				}, 150);
-
-				return () => clearTimeout(timeout);
 			}
 		};
 
-		let rafId: number;
 		const throttledMouseMove = (e: MouseEvent) => {
 			if (rafId) return;
 
@@ -109,17 +111,33 @@
 			});
 		};
 
-		document.body.style.cursor = "none";
-		window.addEventListener("mousemove", throttledMouseMove);
+		const syncCursorMode = () => {
+			window.removeEventListener("mousemove", throttledMouseMove);
+			document.body.style.cursor = "";
+			if (rafId) cancelAnimationFrame(rafId);
+			if (timeoutId) clearTimeout(timeoutId);
+
+			isEnabled = desktopCursorQuery.matches;
+			if (!isEnabled) return;
+
+			document.body.style.cursor = "none";
+			window.addEventListener("mousemove", throttledMouseMove);
+		};
+
+		syncCursorMode();
+		desktopCursorQuery.addEventListener("change", syncCursorMode);
 
 		return () => {
 			window.removeEventListener("mousemove", throttledMouseMove);
-			document.body.style.cursor = "auto";
+			desktopCursorQuery.removeEventListener("change", syncCursorMode);
+			document.body.style.cursor = "";
 			if (rafId) cancelAnimationFrame(rafId);
+			if (timeoutId) clearTimeout(timeoutId);
 		};
 	});
 </script>
 
+{#if isEnabled}
 <motion.div
 	style={{
 		position: "fixed",
@@ -136,6 +154,7 @@
 	initial={{ scale: 0 }}
 	animate={{ scale: 1 }}
 	transition={{
+{/if}
 		type: "spring",
 		stiffness: 400,
 		damping: 30,
