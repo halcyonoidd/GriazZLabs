@@ -30,6 +30,7 @@
 		class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10"
 	>
 		<Navbar />
+		<ScrollProgress class="top-auto bottom-0 z-60" />
 	</div>
 
 	<main class="flex-1 pt-24 md:pt-28">
@@ -68,6 +69,6 @@
 
 	<Footer />
 
-	<ScrollProgress class="top-15.5" />
+	
 	
 </section>
